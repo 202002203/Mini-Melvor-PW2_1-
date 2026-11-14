@@ -1,0 +1,9 @@
+{
+  "name": "mini-melvor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teste de treino de Programação para a Web (client side) - jogo estilo Melvor",
+  "scripts": {
+    "start": "npx --yes serve -l 3000 ."
+  }
+}

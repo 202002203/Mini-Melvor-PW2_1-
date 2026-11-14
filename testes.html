@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Autoverificação — Mini Melvor</title>
+    <style>
+      body { font-family: system-ui, sans-serif; background: #1b1d26; color: #e8e8ee; max-width: 780px; margin: 2rem auto; padding: 0 1rem; }
+      h1 { color: #f5b942; }
+      h2 { margin-bottom: 0.2rem; font-size: 1.05rem; color: #8fb8ff; }
+      .aviso { color: #aab; font-size: 0.9rem; }
+      .resumo { background: #262a38; border: 1px solid #3a4056; border-radius: 8px; padding: 0.8rem 1rem; margin: 1rem 0; }
+      ul { list-style: none; padding-left: 0.5rem; margin-top: 0.2rem; }
+      li { padding: 0.15rem 0; }
+      .ok { color: #6fdc8c; }
+      .ko { color: #ff7b7b; }
+      .bonus { color: #c9a8ff; }
+      .erro { display: block; margin-left: 1.4rem; color: #ffb3b3; font-size: 0.85rem; white-space: pre-wrap; }
+      button { background: #4a90e2; color: #fff; border: 0; border-radius: 4px; padding: 0.4rem 0.9rem; cursor: pointer; }
+    </style>
+    <script defer src="./src/provided/collection.js"></script>
+    <script defer src="./src/q1-base-class.js"></script>
+    <script defer src="./src/provided/base-class-toth.js"></script>
+    <script defer src="./src/q2-skill.js"></script>
+    <script defer src="./src/q4-funcoes.js"></script>
+    <script defer src="./src/q5-tabela.js"></script>
+    <script defer src="./src/q7-game.js"></script>
+    <script defer src="./src/q8-fetch.js"></script>
+    <script defer src="./src/provided/bootstrap.js"></script>
+    <script defer src="./testes/testes.js"></script>
+  </head>
+  <body>
+    <h1>Autoverificação — Mini Melvor</h1>
+    <p class="aviso">
+      Estes testes verificam o comportamento das tuas respostas. Servem para detetares erros,
+      mas não substituem a correção: a nota que contas é a da correção "à professor".
+      Se uma pergunta depender de outra (ex.: 7 depende de 2 e 5), os erros podem vir de trás.
+    </p>
+    <button onclick="location.reload()">Voltar a executar</button>
+    <div id="resumo" class="resumo">A executar…</div>
+    <div id="resultados"></div>
+  </body>
+</html>
